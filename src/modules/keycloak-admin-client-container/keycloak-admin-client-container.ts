@@ -1,6 +1,6 @@
 import type KcAdminClient from '@keycloak/keycloak-admin-client';
 import { Credentials } from '@keycloak/keycloak-admin-client/lib/utils/auth';
-import { ISisgeaNestSsoConfigKeycloak } from '../../domain';
+import { ISisgeaNestAuthConnectConfigKeycloak } from '../../domain';
 import { getModuleKeycloakAdminClient } from '../../infrastructure/helpers/module.kc-admin-client';
 import { wait } from '../../infrastructure/helpers/wait';
 
@@ -15,7 +15,7 @@ export class KeycloakAdminClientContainer {
 
   constructor(
     //
-    readonly configService: ISisgeaNestSsoConfigKeycloak,
+    readonly configService: ISisgeaNestAuthConnectConfigKeycloak,
   ) {}
 
   private get keycloakConfigCredentials() {

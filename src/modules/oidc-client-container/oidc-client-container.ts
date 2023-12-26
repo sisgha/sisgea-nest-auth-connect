@@ -1,5 +1,5 @@
 import { BaseClient, Issuer } from 'openid-client';
-import { ISisgeaNestSsoConfigOidcClient } from '../../domain';
+import { ISisgeaNestAuthConnectConfigOidcClient } from '../../domain';
 
 export class OidcClientContainer {
   #initialized = false;
@@ -7,7 +7,7 @@ export class OidcClientContainer {
 
   constructor(
     //
-    readonly configService: ISisgeaNestSsoConfigOidcClient,
+    readonly configService: ISisgeaNestAuthConnectConfigOidcClient,
   ) {}
 
   private get oidcClientCredentials() {

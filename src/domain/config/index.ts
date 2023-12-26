@@ -1,4 +1,3 @@
-export * from './ISisgeaNestSsoConfig';
-export * from './ISisgeaNestSsoConfigKeycloak';
-export * from './ISisgeaNestSsoConfigOidcClient';
-
+export * from './ISisgeaNestAuthConnectConfig';
+export * from './ISisgeaNestAuthConnectConfigKeycloak';
+export * from './ISisgeaNestAuthConnectConfigOidcClient';
