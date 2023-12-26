@@ -9,14 +9,6 @@
     "build": "tsc -p tsconfig.build.json",
     "prepare": "npm run build"
   },
-  "exports": {
-    "protect-gql": {
-      "default": "./dist/modules/sisgea-nest-auth-protect/gql/index.js"
-    },
-    "protect-http": {
-      "default": "./dist/modules/sisgea-nest-auth-protect/http/index.js"
-    }
-  },
   "dependencies": {
     "@keycloak/keycloak-admin-client": "^22.0.4",
     "@nestjs/passport": "^10.0.2",
